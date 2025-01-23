@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Q3Quiz1</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;1,200&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+	<style>
+			nav {
+				background-color: #41545d;
+				font-family: "Bebas Neue";
+			}
+			.arithmetic {
+				padding: 30px;
+			}
+			html {
+				scroll-behavior: smooth;
+			}
+			body {
+				font-family: arial;
+			}
+	</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-dark fixed top">
+<div class="container-fluid">
+	<a class="navbar-brand" href="index.html"><img src="skibs.png" id="skibs" style="border: none;"></a>
+
+
+	<div class="collapse navbar-collapse">
+		<ul class="navbar-nav me-auto">
+			<li class="nav-item">
+				<a class="nav-link" href="#ari">Arithmetic Operator |</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#comp">Comparison Operator |</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#logi">Logical Operator |</a>
+			</li>
+		</ul>
+
+		<form class="d-flex">
+			<input class="form-control" type="text" style="font-family: Nunito;" placeholder="Search...">
+			<button class="btn btn-primary" type="button"><span style= "color: white; font-family: Nunito;">Search</span></button>
+		</form>
+	</div>
+</div>
+</nav>
+<br>
+<h1 style="text-align: center;"> If k = 16 and m = 18, compute for the following: </h1>
+	<script>
+		var k = 16;
+		var m = 18;
+		var p = k * m;
+	</script>
+<div class="arithmetic">
+	<div id=ari>
+	<h1> Arithmetic Operator</h1>
+			<p> The product of k and m is: </p>
+			<p id="display" style="font-weight: bold;"></p>
+			<p> The difference of k and m is: </p>
+			<p id="display2" style="font-weight:bold;"></p>
+			<button type="button" class="btn btn-success" onclick="document.getElementById('display').innerHTML = p; document.getElementById('display2').innerHTML = k - m; ">Answer</button>
+		</div>
+		<br>
+		<h1> Comparison Operator</h1>
+		<div id=comp>
+			<p> k is greater than or equal to m </p>
+			<p id="display3" style="font-weight: bold;"></p>
+			<p> k is less than m </p>
+			<p id="display4" style="font-weight:bold;"></p>
+			<button type="button" class="btn btn-success" onclick="document.getElementById('display3').innerHTML = k >= m; document.getElementById('display4').innerHTML = k < m; ">Answer</button>
+		</div>
+		<br>
+		<h1> Logical Operator</h1>
+		<div id=logi>
+			<p> k is equal to 5 and m is less than 20: </p>
+			<p id="display5" style="font-weight: bold;"></p>
+			<p> k is greater than 1,000 or m is equal to 18: </p>
+			<p id="display6" style="font-weight:bold;"></p>
+			<button type="button" class="btn btn-success" onclick="document.getElementById('display5').innerHTML = (k==5 && m < 20); document.getElementById('display6').innerHTML = (k>1000 || m == 18); ">Answer</button>
+		</div>
+		<br>
+		<a href="index.html" class="button btn btn-danger">Refresh</a>
+	</div>
+</div>
+</body>
+</html>
